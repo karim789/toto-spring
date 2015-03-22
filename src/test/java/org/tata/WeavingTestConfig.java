@@ -11,8 +11,8 @@ import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 public class WeavingTestConfig {
 
 	@Bean
-	BeanToInject beanToInject(){
-		return new BeanToInject();
+	SpringBean beanToInject(){
+		return new SpringBean();
 	}
 
 }

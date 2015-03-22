@@ -16,9 +16,9 @@ public class WeavingTest extends AbstractTestNGSpringContextTests {
 
 	public void test1() {
 
-		final BeanToWeave beanToWeave = new BeanToWeave();
-		Assert.assertNotNull(beanToWeave.beanToInject, "bean not correctly injected");
-		final String msg = "beanToWeave.beanToInject.message : " + beanToWeave.beanToInject.message;
+		final ConfigurableBean configurableBean = new ConfigurableBean();
+		Assert.assertNotNull(configurableBean.springBean, "bean not correctly injected");
+		final String msg = "beanToWeave.beanToInject.message : " + configurableBean.springBean.message;
 		LOGGER.debug(msg);
 		//System.out.println(msg);
 	}

@@ -34,6 +34,10 @@
 							<groupId>org.springframework</groupId>
 							<artifactId>spring-aspects</artifactId>
 						</aspectLibrary>
+						<aspectLibrary>
+							<groupId>org.dellroad</groupId>
+							<artifactId>dellroad-stuff</artifactId>
+						</aspectLibrary>
 					</aspectLibraries>
 				</configuration>
 				<executions>
@@ -108,11 +112,14 @@
 			<artifactId>spring-tx</artifactId>
 			<version>4.1.4.RELEASE</version>
 		</dependency>
-<!-- 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-instrument</artifactId>
-			<version>4.1.4.RELEASE</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-instrument</artifactId> 
+			<version>4.1.4.RELEASE</version> </dependency> -->
+		<dependency>
+			<groupId>org.dellroad</groupId>
+			<artifactId>dellroad-stuff</artifactId>
+			<version>1.0.905</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -154,7 +161,8 @@
 	<profiles>
 		<profile>
 			<id>m2e</id>
-			<!-- This profile is only active when the property "m2e.version" is set, which is the case when building in Eclipse with m2e. -->
+			<!-- This profile is only active when the property "m2e.version" is set, 
+				which is the case when building in Eclipse with m2e. -->
 			<activation>
 				<property>
 					<name>m2e.version</name>
@@ -163,7 +171,8 @@
 			<build>
 				<pluginManagement>
 					<plugins>
-						<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
+						<!--This plugin's configuration is used to store Eclipse m2e settings 
+							only. It has no influence on the Maven build itself. -->
 						<plugin>
 							<groupId>org.eclipse.m2e</groupId>
 							<artifactId>lifecycle-mapping</artifactId>
