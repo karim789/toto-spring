@@ -19,7 +19,7 @@ public class ThreadConfigurableTest extends AbstractTestNGSpringContextTests {
 		final ThreadConfigurableBean configurableBean = new ThreadConfigurableBean();
 		Assert.assertNotNull(configurableBean.springBean, "bean not correctly injected");
 		final String msg = "beanToWeave.beanToInject.message : " + configurableBean.springBean.message;
-		LOGGER.debug(msg);
+		LOGGER.info(msg);
 
 	}
 

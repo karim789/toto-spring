@@ -19,7 +19,7 @@ public class WeavingTest extends AbstractTestNGSpringContextTests {
 		final ConfigurableBean configurableBean = new ConfigurableBean();
 		Assert.assertNotNull(configurableBean.springBean, "bean not correctly injected");
 		final String msg = "beanToWeave.beanToInject.message : " + configurableBean.springBean.message;
-		LOGGER.debug(msg);
+		LOGGER.info(msg);
 		//System.out.println(msg);
 	}
 
