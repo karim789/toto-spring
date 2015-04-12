@@ -4,7 +4,7 @@
 
 	<groupId>toto</groupId>
 	<artifactId>toto-spring</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${proj.version}${build.number}</version>
 	<packaging>jar</packaging>
 
 	<name>toto-spring</name>
@@ -12,6 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<build.number>SNAPSHOT</build.number>
+		<proj.version>0.0.1-</proj.version>
 	</properties>
 
 	<build>
