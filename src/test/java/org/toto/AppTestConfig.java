@@ -15,7 +15,7 @@ import org.toto.service.Pouet;
 import org.toto.service.Truc;
 
 @Configuration
-@ComponentScan(lazyInit=true,
+@ComponentScan(
 		basePackages = { "org.toto.dao",
 						 "org.toto.service"}, 
 		includeFilters = {
@@ -23,17 +23,14 @@ import org.toto.service.Truc;
 						value = { Stateless.class,Stateful.class })
 					}
 		)
-@Lazy
 public class AppTestConfig {
 
 	@Bean
-	@Lazy
 	public Pouet pouet() {
 		return new Pouet();
 	}
 	
 	@Bean
-	@Lazy
 	public Tagada tagada() {
 		return new Tagada();		
 	}
@@ -44,7 +41,6 @@ public class AppTestConfig {
 	}
 	
 	@Bean
-	@Primary
 	public ITruc truc() {
 		return new Truc();
 	}

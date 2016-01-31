@@ -19,15 +19,12 @@ import org.toto.service.ITruc;
  */
 @Test(groups = { "unit" })
 @ContextHierarchy({ @ContextConfiguration(classes = AppTestConfig.class) })
-@Lazy
 public class AppTestNG extends AbstractTestNGSpringContextTests {
 
 	@EJB
-	@Lazy
 	AService aservice;
 	
 	@Autowired
-	@Lazy
 	IPouet pouet;
 	
 	@Autowired
