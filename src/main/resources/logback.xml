@@ -9,15 +9,12 @@
 
 	<logger name="org.springframework">
 		<level value="${org.springframework-level:-{$root-level:-INFO}}" />
-		<appender-ref ref="STDOUT" />
 	</logger>
 	<logger name="org.tata">
 		<level value="${org.toto-level:-{$root-level:-INFO}}" />
-		<appender-ref ref="STDOUT" />
 	</logger>
 	<logger name="org.toto">
 		<level value="${org.tata-level:-{$root-level:-INFO}}" />
-		<appender-ref ref="STDOUT" />
 	</logger>
 	<root>
 		<level value="${root-level:-INFO}" />
